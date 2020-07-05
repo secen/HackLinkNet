@@ -23,8 +23,27 @@
         </Grid.ColumnDefinitions>
         <Label Grid.Row="1" Grid.Column="0" MinHeight="30" Foreground="White">Username</Label>
         <Label Grid.Row="2" Grid.Column="0" MinHeight="30" Foreground="White">Password</Label>
-        <TextBox Grid.Row="1" Grid.Column="1" x:Name="UsernameBox"></TextBox>
-        <TextBox Grid.Row="2" Grid.Column="1" x:Name="PasswordBox"></TextBox>
-        <Button Grid.Row="3" Grid.Column="1" Foreground="White" Background="Black" BorderBrush="White" MinHeight="30" MinWidth="145">Login</Button>
+        <TextBox Grid.Row="1" Grid.Column="1" x:Name="UsernameBox" Foreground="White" Background="DarkBlue"></TextBox>
+        <TextBox Grid.Row="2" Grid.Column="1" x:Name="PasswordBox" Foreground="White" Background="DarkBlue"></TextBox>
+        <Button Grid.Row="3" x:Name="loginButton" Grid.Column="1" Foreground="White" Background="Black" BorderBrush="White" MinHeight="30" MinWidth="145">
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Background" Value="Black" />
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border x:Name="Border" Background="{TemplateBinding Background}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="#FF646464" TargetName="Border" />
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Button.Style> Login</Button>
     </Grid>
 </UserControl>

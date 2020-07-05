@@ -1,4 +1,6 @@
-﻿using System.Windows.Controls;
+﻿using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Media;
 
 namespace Uplink2 {
     /// <summary>
@@ -8,5 +10,6 @@ namespace Uplink2 {
         public LoginScreen() {
             InitializeComponent();
         }
+
     }
 }
