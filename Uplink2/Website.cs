@@ -10,9 +10,14 @@ namespace Uplink2 {
         string description = "Testingdesc";
         string subtitle = "Testingsub";
         string ip = "1.1.1.1";
+
+        internal static bool SearchForFile(SECFile file) {
+            throw new NotImplementedException();
+        }
+
         List<User> users = new List<User>();
         List<Log> logs = new List<Log>();
-        LoginScreen loginScreen = new LoginScreen();
+        LoginScreen loginScreen;
         private static Random random = new Random();
         List<Website> links = new List<Website>();
         bool userLoginSuccessful = false;

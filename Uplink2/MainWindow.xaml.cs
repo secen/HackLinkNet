@@ -10,8 +10,6 @@ namespace Uplink2 {
         }
 
         private void Button_Click(object sender, RoutedEventArgs e) {
-            Tests tests = new Tests();
-            tests.Run();
         }
     }
 }

@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:Uplink2"
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="150" MaxWidth="150" Width="150">
-    <Grid Background="OrangeRed">
+    <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition MaxWidth="150" Width="150"></ColumnDefinition>
         </Grid.ColumnDefinitions>
@@ -14,8 +14,25 @@
             <RowDefinition Height="30"></RowDefinition>
             <RowDefinition Height="Auto"></RowDefinition>
         </Grid.RowDefinitions>
-        <Label Grid.Column="0" Grid.Row="0" Content="Previous Logins:" Foreground="White" Background="DarkRed" MaxWidth="150" Width="150"></Label>
-        <DataGrid Grid.Row="1" Background="DarkRed" Foreground="White" AutoGenerateColumns="False" CanUserAddRows="True" CanUserDeleteRows="True" CanUserReorderColumns="False" CanUserResizeColumns="False" CanUserResizeRows="False" CanUserSortColumns="True" AlternatingRowBackground="DarkRed" AlternationCount="1" MouseDoubleClick="DataGrid_MouseDoubleClick"> 
-        </DataGrid>
+        <Grid Grid.Row="0" Grid.Column="0">
+            <StackPanel>
+                <Label Grid.Column="0" Grid.Row="0" Content="Previous Logins:" Foreground="White" Background="Black" MaxWidth="150" Width="150"></Label>
+            <DataGrid Grid.Row="1" Background="White" MinHeight="15" Foreground="Black" AutoGenerateColumns="True" CanUserAddRows="True" CanUserDeleteRows="True" CanUserReorderColumns="False" CanUserResizeColumns="False" CanUserResizeRows="False" CanUserSortColumns="True" AlternatingRowBackground="DarkRed" AlternationCount="1" MouseDoubleClick="DataGrid_MouseDoubleClick">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn>
+                            <DataGridTextColumn.Header>Test</DataGridTextColumn.Header>
+                        </DataGridTextColumn>
+                    </DataGrid.Columns>
+                    <DataGrid.Resources>
+                        <DataTemplate x:Key="1" DataType="string">
+                            <TextBlock>asdf</TextBlock>
+                        </DataTemplate>
+                    </DataGrid.Resources>
+            </DataGrid>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Row="1" Grid.Column="0" Background="Black" MinWidth="100" MinHeight="300" Opacity="0.3">
+            
+        </Grid>
     </Grid>
 </UserControl>

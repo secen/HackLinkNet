@@ -23,9 +23,9 @@
         </Grid.ColumnDefinitions>
         <Label Grid.Row="1" Grid.Column="0" MinHeight="30" Foreground="White">Username</Label>
         <Label Grid.Row="2" Grid.Column="0" MinHeight="30" Foreground="White">Password</Label>
-        <TextBox Grid.Row="1" Grid.Column="1" x:Name="UsernameBox" Foreground="White" Background="DarkBlue"></TextBox>
-        <TextBox Grid.Row="2" Grid.Column="1" x:Name="PasswordBox" Foreground="White" Background="DarkBlue"></TextBox>
-        <Button Grid.Row="3" x:Name="loginButton" Grid.Column="1" Foreground="White" Background="Black" BorderBrush="White" MinHeight="30" MinWidth="145">
+        <TextBox Opacity="0.83" Grid.Row="1" Grid.Column="1" x:Name="UsernameBox" Foreground="White" Background="DarkBlue"></TextBox>
+        <TextBox  Opacity="0.83" Grid.Row="2" Grid.Column="1" x:Name="PasswordBox" Foreground="White" Background="DarkBlue"></TextBox>
+        <Button Grid.Row="3" Opacity="0.83" x:Name="loginButton" Grid.Column="1" Foreground="White" Background="Black" BorderBrush="White" MinHeight="30" MinWidth="145">
             <Button.Style>
                 <Style TargetType="{x:Type Button}">
                     <Setter Property="Background" Value="Black" />
