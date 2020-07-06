@@ -10,6 +10,9 @@ namespace Uplink2 {
         public static bool deleteFile(Website website, SECFile file) {
             return !Website.SearchForFile(file);
         }
+        public static bool uploadFile(Website website, SECFile file) {
+            return Website.SearchForFile(file);
+        }
     }
     class Mission {
         public string name;

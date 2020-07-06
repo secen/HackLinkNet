@@ -26,6 +26,6 @@
                 <TextBlock Text="Website Description" x:Name="webDescription" Foreground="AntiqueWhite" Margin="5,0,0,5"></TextBlock>
             </Border>
         </StackPanel>
-        <local:LoginScreen Grid.Column="0" Grid.Row="1"></local:LoginScreen>
+        <local:LoginScreen x:Name="loginScreen" Grid.Column="0" Grid.Row="1"></local:LoginScreen>
     </Grid>
 </Page>

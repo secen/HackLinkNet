@@ -10,8 +10,11 @@ namespace Uplink2 {
         Forums,
     }
     public class User {
-        public string name;
-        public string password;
-        public List<Privilege> privileges;
+        public string name="";
+        public string password="";
+        public List<Privilege> privileges = new List<Privilege>();
+        public User() {
+
+        }
     }
 }

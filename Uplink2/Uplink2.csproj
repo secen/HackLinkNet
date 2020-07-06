@@ -99,7 +99,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="DebugWebsite.cs" />
     <Compile Include="Log.cs" />
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="StartMenuLoginScreen.xaml.cs">
+      <DependentUpon>StartMenuLoginScreen.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Mission.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="SECFile.cs" />
@@ -110,6 +117,14 @@
     <Compile Include="WebsiteLoginScreen.xaml.cs">
       <DependentUpon>WebsiteLoginScreen.xaml</DependentUpon>
     </Compile>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="StartMenuLoginScreen.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="LoginScreen.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

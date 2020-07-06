@@ -5,27 +5,27 @@ using System.Security.AccessControl;
 using System.Windows.Media;
 
 namespace Uplink2 {
-    class Website {
-        string name = "Test";
-        string description = "Testingdesc";
-        string subtitle = "Testingsub";
-        string ip = "1.1.1.1";
+    public class Website {
+        public string name = "Test";
+       public string description = "Testingdesc";
+       public string subtitle = "Testingsub";
+       public string ip = "1.1.1.1";
 
         internal static bool SearchForFile(SECFile file) {
             throw new NotImplementedException();
         }
 
-        List<User> users = new List<User>();
-        List<Log> logs = new List<Log>();
-        LoginScreen loginScreen;
+        public List<User> users = new List<User>();
+        public List<Log> logs = new List<Log>();
+        public WebsiteLoginScreen loginScreen;
         private static Random random = new Random();
-        List<Website> links = new List<Website>();
+        public List<Website> links = new List<Website>();
         bool userLoginSuccessful = false;
-        Player pl = new Player();
+        public Player pl = new Player();
         internal void addUser(User user) {
             users.Add(user);
         }
-        void deleteLogs() {
+        public void deleteLogs() {
             if (connectedUser.privileges.Contains(Privilege.Admin)) {
                 switch (Player.deleteTool.level) {
                     case 1:
@@ -44,14 +44,14 @@ namespace Uplink2 {
             }
         }
 
-        private void replaceAllLogsWithRoutedOnes() {
+        public void replaceAllLogsWithRoutedOnes() {
 
             List<Log> aux = new List<Log>(logs.Count);
             for (int i = 0; i < logs.Count; i++)
                 aux.Add(new Log { content = "Connected and routed " + RandomIP() + " to " + RandomIP(), deletionLevel = 3 });
             logs = aux;        }
 
-        private void replaceAllLogsWithScramOnes() {
+        public void replaceAllLogsWithScramOnes() {
 
             List<Log> aux = new List<Log>(logs.Count);
             for (int i = 0; i < logs.Count; i++)
@@ -59,7 +59,7 @@ namespace Uplink2 {
             logs = aux;
         }
 
-        private void removeAllLogs() {
+        public void removeAllLogs() {
             logs = new List<Log>();
                 }
         private void replaceAllLogsWithDeletedOnes() {
@@ -86,7 +86,7 @@ namespace Uplink2 {
         public void connect(User usr) {
             connectedUser = usr;
         }
-        public bool tryLogin(User usr) {
+        virtual public bool tryLogin(User usr) {
             if (users.Count > 0){ 
                 userLoginSuccessful = users.Any(item => item.Equals(usr));
                 return userLoginSuccessful; }

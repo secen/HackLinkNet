@@ -10,6 +10,9 @@ namespace Uplink2 {
         public LoginScreen() {
             InitializeComponent();
         }
+        public LoginScreen(Website website) {
+            
+        }
 
     }
 }
