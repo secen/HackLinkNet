@@ -31,3 +31,42 @@
 - Previous Agents Tab on the right
 - Title Screen At The Top
 - World Map in the background.
+## Mission Structure
+- Name
+- Description
+- Condition to fulfill, possible conditions:
+  - Destroy data
+  - Copy data
+  - Wipe server
+  - Modify Logs
+  - Delete Logs
+  - Respond with Information
+  - Modifying Accounts:
+   - Medical
+   - Bank
+   - Criminal
+   - User
+- Condition to take (usually a rank in the organisation)
+- Pay
+## Server Structure
+- Greet Page (usually a login screen)
+- Files
+- Logs
+- Links
+- Users
+- Admin Options
+### Special kinds of servers
+#### Banking
+Banking servers usually have increased security, and they hold bank accounts.
+Bank Account Makeup:
+- Number
+- Sum
+- Transfers
+#### Mission
+Mission servers are the way the player is able to gain missions, while initially only one will be available, more will open up (to a maximum of 5), from different organisations
+#### Forums
+Organisations have different forums where they communicate, this is one way to scoop info, and so called secret missions, where the reward varies greatly, as opposed to standard or story missions, think of them as side quests.
+#### Organisational
+Organisations have servers that hold their records, these can be broken into, and that will be required for certain quests, or as side activities the player can do if he chooses to do so, in order to learn more about the so called "Lore" of the game.
+## Hacking
+Hacking is done via hacking tools, which can be purchased from mission servers or downloaded from forums
