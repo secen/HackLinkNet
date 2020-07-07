@@ -5,14 +5,14 @@
 - ENGINE: WPF C#
 - Development Time 2020.07.01-Present
 - Estimated End Of Development Time: 2020.09.22
-#Features
+# Features
 - Over 30 storyline missions
 - 3 Factions
 - Multiple Endings
 - Randomly generated world and mission
 - Versus mode (BONUS FEATURE)
 - Semi-realistic commands and software
-#Inspirations
+# Inspirations
 - Hacknet
 - Uplink
 - Hacker Evolution
@@ -70,3 +70,18 @@ Organisations have different forums where they communicate, this is one way to s
 Organisations have servers that hold their records, these can be broken into, and that will be required for certain quests, or as side activities the player can do if he chooses to do so, in order to learn more about the so called "Lore" of the game.
 ## Hacking
 Hacking is done via hacking tools, which can be purchased from mission servers or downloaded from forums.
+### The Password Cracker
+The Password Cracker comes in various versions and forms:
+#### The Bruter
+The Bruter brute forces the password, taking the longest time to resolve, usually triggering detection systems.
+#### The Dictionary Attacker
+The Dictionary Attacker uses a common word dictionary to guess a common password, particularly useful for forums and email servers.
+### The Decryptor
+Decryptors decrypt files in order for the user to be able to use the contents.
+#### SHA-256
+#### Eliptical Curve
+#### MD512
+## File Utilities
+### File Copier
+### File Remover
+### File Reader
