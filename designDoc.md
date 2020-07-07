@@ -63,10 +63,10 @@ Bank Account Makeup:
 - Sum
 - Transfers
 #### Mission
-Mission servers are the way the player is able to gain missions, while initially only one will be available, more will open up (to a maximum of 5), from different organisations
+Mission servers are the way the player is able to gain missions, while initially only one will be available, more will open up (to a maximum of 5), from different organisations. These are also the places where the player can read up on the news and purchase hacking tools.
 #### Forums
 Organisations have different forums where they communicate, this is one way to scoop info, and so called secret missions, where the reward varies greatly, as opposed to standard or story missions, think of them as side quests.
 #### Organisational
 Organisations have servers that hold their records, these can be broken into, and that will be required for certain quests, or as side activities the player can do if he chooses to do so, in order to learn more about the so called "Lore" of the game.
 ## Hacking
-Hacking is done via hacking tools, which can be purchased from mission servers or downloaded from forums
+Hacking is done via hacking tools, which can be purchased from mission servers or downloaded from forums.
