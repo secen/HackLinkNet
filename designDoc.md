@@ -76,6 +76,12 @@ The Password Cracker comes in various versions and forms:
 The Bruter brute forces the password, taking the longest time to resolve, usually triggering detection systems.
 #### The Dictionary Attacker
 The Dictionary Attacker uses a common word dictionary to guess a common password, particularly useful for forums and email servers.
+### Log Deleter
+The Log deleter deletes logs in a different fashion depending upon the level.
+- Level 1 - "Log Deleted"
+- Level 2 - A random string of alphanumeric characters
+- Level 3 - A random routing log
+- Level 4 - Log not found
 ### The Decryptor
 Decryptors decrypt files in order for the user to be able to use the contents.
 #### SHA-256
