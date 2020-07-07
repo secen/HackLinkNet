@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Uplink2"
         mc:Ignorable="d"
         Title="MainWindow" Height="600" Width="900">
-    <Frame x:Name="frame">
+    <Frame x:Name="frame" Height="600" Width="900">
         
     </Frame>
 </Window>

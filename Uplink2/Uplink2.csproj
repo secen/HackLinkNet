@@ -100,9 +100,18 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="DebugWebsite.cs" />
+    <Compile Include="GameToolBar.xaml.cs">
+      <DependentUpon>GameToolBar.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Log.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainTitle.xaml.cs">
+      <DependentUpon>MainTitle.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsPage.xaml.cs">
+      <DependentUpon>SettingsPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="StartMenuLoginScreen.xaml.cs">
       <DependentUpon>StartMenuLoginScreen.xaml</DependentUpon>
@@ -117,7 +126,19 @@
     <Compile Include="WebsiteLoginScreen.xaml.cs">
       <DependentUpon>WebsiteLoginScreen.xaml</DependentUpon>
     </Compile>
+    <Page Include="GameToolBar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainTitle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SettingsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

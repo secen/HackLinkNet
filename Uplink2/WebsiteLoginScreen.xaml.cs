@@ -1,5 +1,6 @@
 ﻿using NUnit.Framework.Constraints;
 using System.Diagnostics;
+using System.Windows;
 using System.Windows.Controls;
 
 namespace Uplink2 {
@@ -25,6 +26,15 @@ namespace Uplink2 {
                     associatedWebsite.tryLogin(usr);
                 }
             }
+        }
+
+        private void Button_Click(object sender, System.Windows.RoutedEventArgs e) {
+            SettingsPage.BackToMenu(sender,e);
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e) {
+            MainWindow window = (MainWindow)Application.Current.MainWindow;
+            window.frame.Navigate(new SettingsPage());
         }
     }
 }

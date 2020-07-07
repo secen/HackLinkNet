@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="Uplink2.GameToolBar"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Uplink2"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+
+        <ToolBar x:Name="toolbar" Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Top" Background="Orange">
+            <Button HorizontalAlignment="Right" VerticalAlignment="Top" Content="ToolBox"/>
+            <Button Grid.Column="2" Grid.Row="0" Content="Settings" HorizontalAlignment="Right" VerticalAlignment="Top" Click="Button_Click_1"/>
+            <Button Grid.Column="2" Grid.Row="0" Content="X" MinWidth="25" Width="25" MaxWidth="25" HorizontalAlignment="Right" VerticalAlignment="Top" Click="Button_Click">
+            </Button>
+        </ToolBar>
+    </Grid>
+</UserControl>

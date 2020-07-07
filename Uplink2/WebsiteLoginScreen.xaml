@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Uplink2"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="600" d:DesignWidth="900"
       Title="WebsiteLoginScreen">
 
     <Grid Background="MidnightBlue">
@@ -26,6 +26,7 @@
                 <TextBlock Text="Website Description" x:Name="webDescription" Foreground="AntiqueWhite" Margin="5,0,0,5"></TextBlock>
             </Border>
         </StackPanel>
+        <local:GameToolBar Grid.Column="2"></local:GameToolBar>
         <local:LoginScreen x:Name="loginScreen" Grid.Column="0" Grid.Row="1"></local:LoginScreen>
     </Grid>
 </Page>

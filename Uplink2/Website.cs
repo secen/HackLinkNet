@@ -5,6 +5,15 @@ using System.Security.AccessControl;
 using System.Windows.Media;
 
 namespace Uplink2 {
+    public class Websites {
+        public Website hckLnkInternalSrv = new Website {
+            name = "Hacklink Internal Services Web Server",
+            subtitle = "Please login",
+            description = "Hacklink is not to be held liable by any damages caused by the information provided here",
+            ip = "9.9.9.9",
+            users = new List<User> { new User { name="admin", password="asdkjfhsdaioejfwolifjwe", privileges=new List<Privilege>{ Privilege.Admin } },
+        };
+    }
     public class Website {
         public string name = "Test";
        public string description = "Testingdesc";
